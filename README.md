@@ -8,7 +8,7 @@ Pytorch 1.1.0 with CUDA
 
 ### Dataset Preparation
 
-Please prepare the ImageNet validation dataset, we use [official axample code](https://github.com/pytorch/examples/blob/master/imagenet/main.py) here to provide validation dataloader. The CIFAR10 validation dataset can be download automatically. 
+Please prepare the ImageNet validation dataset, we use [official example code](https://github.com/pytorch/examples/blob/master/imagenet/main.py) here to provide validation dataloader. The CIFAR10 validation dataset can be download automatically. 
 
 ## CIFAR10
 
