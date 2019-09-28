@@ -5,6 +5,10 @@ This repo contains the code and data of the following paper submitted to [ICLR 2
 
 Only several model checkpoints are provided to show the results in this paper. **All models** in the paper and **training codes** will be open sourced upon acceptance.
 
+<p align="center">
+  <img src="https://i.imgur.com/0oxm19W.png">
+</p>
+
 ## Installation
 
 ### Prerequisites
@@ -13,7 +17,8 @@ Pytorch 1.1.0 with CUDA
 
 ### Dataset Preparation
 
-Please prepare the ImageNet validation dataset, we use [official example code](https://github.com/pytorch/examples/blob/master/imagenet/main.py) here to provide validation dataloader. The CIFAR10 validation dataset can be download automatically. 
+* Please prepare the ImageNet validation dataset, we use [official example code](https://github.com/pytorch/examples/blob/master/imagenet/main.py) here to provide validation dataloader. 
+* The CIFAR10 validation dataset can be download automatically. 
 
 ## CIFAR10
 
