@@ -1,3 +1,7 @@
+| <p align="center"> <img src="https://i.imgur.com/8QHsE3U.png"> </p> |
+|:---:|
+|[Image is created from ResNet-18 by this [jupyter notebook]()]|
+
 # ICLR2020APoT
 This repo contains the code and data of the following paper submitted to [ICLR 2020](https://openreview.net/group?id=ICLR.cc/2020/Conference)
 
