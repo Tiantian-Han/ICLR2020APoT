@@ -148,28 +148,3 @@ def find_apot_level(data):
             second_term = np.log2(np.abs(data)-2**np.floor(first_term))
             return (r'$2^{%d}+2^{%d}$'%(np.floor(first_term), second_term) if sign==1 else r'$-(2^{%d}+2^{%d})$'%(np.floor(first_term),second_term)), 9
 
-
-
-model = resnet18()
-checkpoint = torch.load('checkpoint/res18_5bit.pth.tar', map_location='cpu')          # load checkpoint into cpu
-state_dict = {k.replace('module.', ''): v for k, v in checkpoint.items()}
-model.load_state_dict(state_dict)
-weights_q_matrix = None
-alpha = None
-for m in model.modules():                                                    # load weights in the first quantized layer
-    if isinstance(m, QuantConv2d):
-        weights_q_matrix = m.weight_quant(m.weight.data)
-        weights_q_matrix = weights_q_matrix.div(m.weight_quant.wgt_alpha.item())*1.5
-        alpha = m.weight_quant.wgt_alpha.item()
-        break
-weights_q_matrix = weights_q_matrix[0][0:9].reshape(9,9).detach().numpy() # select the first 81 elements in the first kernal
-print(weights_q_matrix)
-
-fig, ax = plt.subplots(figsize=[8,8], dpi=100)
-im= heatmap(weights_q_matrix, 9, 9, ax=ax,
-                   cmap="YlGn", cbarlabel="harvest [t/year]")
-texts = annotate_heatmap(im, valfmt="{x:.1f} t")
-
-fig.tight_layout()
-plt.savefig('weight_visual.png')
-plt.show()
