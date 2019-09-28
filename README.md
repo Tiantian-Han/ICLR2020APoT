@@ -1,4 +1,9 @@
 # ICLR2020APoT
+This repo contains the code and data of the following paper submitted to [ICLR 2020](https://openreview.net/group?id=ICLR.cc/2020/Conference)
+
+> [Additive Power-of-Two Quantization: A Non-uniform Discretization For Neural Networks](https://openreview.net/pdf?id=BkgXT24tDS)
+
+Only several model checkpoints are provided to show the results in this paper. **All models** in the paper and **training codes** will be open sourced upon acceptance.
 
 ## Installation
 
@@ -103,6 +108,4 @@ Test: [40/49]   Time  0.339 ( 1.077)    Loss 1.2208e+00 (1.2504e+00)    Acc@1  7
  * Acc@1 69.672 Acc@5 88.986
 ```
 
-We only provide several models to show the implementation.
 
-All the reported models in the paper and the training codes will be open sourced upon acceptance.
