@@ -3,7 +3,7 @@ This repo contains the code and data of the following paper submitted to [ICLR 2
 
 > [Additive Power-of-Two Quantization: A Non-uniform Discretization For Neural Networks](https://openreview.net/pdf?id=BkgXT24tDS)
 
-Only several model checkpoints are provided to show the results in this paper. **All models** in the paper and **training codes** will be open sourced upon acceptance.
+Only several model checkpoints are provided to show the results for now. **All models** in the paper and **training codes** will be open sourced upon acceptance.
 
 <p align="center">
   <img src="https://i.imgur.com/0oxm19W.png">
